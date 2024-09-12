@@ -1,0 +1,12 @@
+﻿@model ProductCatalog.Models.Product
+
+<h2>Product Details</h2>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Name</h5>
+        <p class="card-text">@Model.Description</p>
+        <p class="card-text"><strong>Price: </strong> @Model.Price.ToString("C")</p>
+        <a href="@Url.Action("Index")" class="btn btn-primary">Back to Product List</a>
+    </div>
+</div>
